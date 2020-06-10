@@ -1,0 +1,45 @@
+
+.card{
+	margin-bottom: 30px;
+	transition: all 0.2s ease;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+
+.card:hover{
+	transform: scale(1.05);
+}
+
+.card-footer {
+	padding: 0;
+}
+
+.card-footer button {
+	cursor: pointer;
+}
+
+.btn-secondary{
+	background-color: #ff9f40;
+	border-color: black;
+}
+
+.row .col{
+	flex-basis: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    height:300px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    height:200px;
+  }
+	.col{
+		flex-basis: 100%;
+	}
+}

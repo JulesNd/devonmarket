@@ -1,0 +1,36 @@
+.thumbnail{
+	height: 80px;
+	border-radius: 100%;
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-high{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 10px;
+}
+.btn-primary{
+	background-color: #ff9f40;
+	border-color: black;
+}
+
+.btnContinue{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: end;
+}
+
+p{
+	margin: 0;
+}
+
+.table th,td {
+	border: 2px solid #dee2e6;
+	text-align:center;
+	vertical-align: middle;
+}

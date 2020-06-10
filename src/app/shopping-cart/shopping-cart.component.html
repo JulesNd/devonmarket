@@ -1,0 +1,51 @@
+<h1> Votre panier</h1>
+<div class="row col-10" *ngIf="cart$ | async as cart">
+	<div class="menu-high">
+		<p>
+	 		Vous avez {{ cart.totalItemsCount }} articles dans votre panier
+		</p>
+		<button *ngIf="cart.items.length"
+			(click)="clearCart()"
+			class="btn btn-light btn-sm">Supprimer mes articles</button>
+	</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Produit</th>
+				<th class="text-center" style="width: 230px">Quantité</th>
+				<th class="text-right" style="width: 200px">Prix</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of cart.items">
+				<td align="center">
+					<div [style.backgroundImage]="'url(' + item.imageUrl + ')'" class="thumbnail"></div>
+				</td>
+				<td>
+					{{ item.title }}
+				</td>
+				<td>
+					<product-quantity [product]="item" [shopping-cart]="cart">
+		 	        </product-quantity>
+				</td>
+				<td class="text-right">
+					{{ item.totalPrice | currency:'EUR':true }}
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th class="text-right">
+					{{ cart.totalPrice | currency:'EUR':true}}
+				</th>
+			</tr>
+		</tfoot>
+	</table>
+	<div class="btnContinue">
+		<a *ngIf="cart.items.length" routerLink="/check-out" class="btn btn-primary">Continuer</a>
+	</div>
+</div>

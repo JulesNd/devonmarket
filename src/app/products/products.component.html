@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-3">
+		<product-filter [category]="category"></product-filter>
+	</div>
+	<div class="col-9">
+		<div class="row" *ngIf="cart$ | async as cart">
+			<ng-container *ngFor="let p of filteredProducts; let i = index">
+				<div class="col">
+					<product-card [product]="p" [shopping-cart]="cart"></product-card>
+				</div>
+				<div *ngIf="(i + 1)%2 === 0"class="w-100"></div>
+			</ng-container>
+    	</div>
+	</div>
+</div>
+<div *ngIf="!appUser ">
+<img class="logo"   src="https://drive.google.com/uc?export=view&id=1ROiOaLLMfXH6uex4HvbxuDFJwLB58eRA" />
+
+<div class="Connectetoimec"  >
+Pour profiter de DevonMarket veuillez vous connecter avec votre compte Gmail
+
+</div>
+</div>
