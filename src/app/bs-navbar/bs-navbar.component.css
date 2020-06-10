@@ -29,10 +29,14 @@
 	align-items: center;
 }
 
+.nav-link{
+	color: #ff9f40 !important;
+}
+
 .nav-login{
 	background: #ff9f40;
 	padding: 10px 30px;
-	color: white;
+	color: white !important;
 	box-shadow: 0 3px 6px rgba(0, 60, 157, 0.45);
 	font-family: Montserrat;
 	border-radius: 5px;
@@ -44,7 +48,7 @@
 
 .nav-login:hover{
 	background-color: white;
-	color: #ff9f40;
+	color: #ff9f40 !important;
 }
 
 .dropdown-menu{
