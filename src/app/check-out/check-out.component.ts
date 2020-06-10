@@ -8,9 +8,9 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: './check-out.component.html',
   styleUrls: ['./check-out.component.css']
 })
-export class CheckOutComponent implements OnInit{ 
+export class CheckOutComponent implements OnInit{
   cart$: Observable<ShoppingCart>;
-  constructor(private cartService : ShoppingCartService) {}
+  constructor(private cartService: ShoppingCartService) {}
 
   async ngOnInit() {
   	this.cart$ = await this.cartService.getCart();

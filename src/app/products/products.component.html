@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-3">
-		<product-filter [category]="category"></product-filter>
+		<product-filter *ngIf="appUser "  [category]="category"></product-filter>
 	</div>
 	<div class="col-9">
 		<div class="row" *ngIf="cart$ | async as cart">
@@ -14,6 +14,19 @@
 	</div>
 </div>
 <div *ngIf="!appUser ">
+
+
+  <header style="padding: 2%; text-align: center">
+    <h1 class="h" style="padding: 2%">DevonMarket </h1>
+    <h5>Avec <span style="color:slateblue">DevonMarket</span>, vos fruits et légumes <span style="color:slateblue">Bio</span> cueillis le matin et livrés le lendemain !</h5>
+
+    <p>En matière de goût, le chemin le plus court est toujours le meilleur…
+      C’est pourquoi chez <span style="color:slateblue">DevonMarket</span>, la proximité nous tient à coeur ! Proximité des fruits, légumes et produits frais que nous sélectionnons pour vous mais aussi proximité entre vous, consommateurs gourmands & exigeants, et <span style="color:slateblue">nos producteurs locaux</span> avec qui nous partageons les mêmes valeurs : transparence, qualité gustative et modes de production raisonnés et respectueux de l’environnement.
+      Notre pari ? Vous faire (re)commander <span style="color:slateblue">DevonMarket</span> les yeux fermés ! </p>
+    <button  class="comment"  style="">Comment ça marche ?</button>
+  </header>
+
+  <!--
 	<div class="slogan_logo">
 			<div class="logo">
 				<img src ="https://drive.google.com/uc?export=view&id=1ROiOaLLMfXH6uex4HvbxuDFJwLB58eRA" alt="logoDevon">
@@ -30,15 +43,12 @@
 					<li><img src="https://image.shutterstock.com/image-photo/grapes-on-white-background-260nw-1197566971.jpg" alt="Raisins"></li>
 					<li><img src="https://previews.123rf.com/images/usersam2007/usersam20071902/usersam2007190200016/117335641-green-yellow-pear-fruit-isolated-on-white-background-with-clipping-path-full-depth-of-field-.jpg" alt="Poires"></li>
 					<li><img src="https://img-3.journaldesfemmes.fr/Y80Tv_whjHLpqe5xj4zfhEKnGww=/910x607/smart/7cd11422bbd64b76ad8c0b8ff3dc0e3a/ccmcms-jdf/10659032.jpg" alt="Avocat"></li>
-					<!-- <li><img src="../IMG/jpg/fiat-abarth-500-assetto-corse-2.jpg" alt="Abarth 500" style="height:188px;width:250px;" width="250" height="188"></li> -->
+					<li><img src="../IMG/jpg/fiat-abarth-500-assetto-corse-2.jpg" alt="Abarth 500" style="height:188px;width:250px;" width="250" height="188"></li>
 				</ul>
       </section>
-	</div>
+	</div> -->
 
 	<div class="Connectetoimec">
-		<h5>Avec <span style="color:#ff9f40">DevonMarket</span>, vos fruits et légumes <span style="color:#ff9f40">Bio</span> cueillis le matin et livrés le lendemain !</h5>
-		<p>En matière de goût, le chemin le plus court est toujours le meilleur…
-			C’est pourquoi chez <span style="color:#ff9f40">DevonMarket</span>, la proximité nous tient à coeur ! Proximité des fruits, légumes et produits frais que nous sélectionnons pour vous mais aussi proximité entre vous, consommateurs gourmands & exigeants, et <span style="color:#ff9f40">nos producteurs locaux</span> avec qui nous partageons les mêmes valeurs : transparence, qualité gustative et modes de production raisonnés et respectueux de l’environnement.
-			Notre pari ? Vous faire (re)commander <span style="color:#ff9f40">DevonMarket</span> les yeux fermés ! </p>
+
 	</div>
 </div>

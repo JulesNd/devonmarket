@@ -27,10 +27,10 @@
             <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" routerLink="/my/orders">Mes commandes</a>
               <ng-container *ngIf="appUser.email ==='devonmarket69@gmail.com'">
-                <a class="dropdown-item" routerLink="/admin/orders">Commandes</a>
-                <a class="dropdown-item" routerLink="/admin/products">Produits</a>
+                <a class="dropdown-item" routerLink="/admin/orders">Liste des achats</a>
+                <a class="dropdown-item" routerLink="/admin/products">Liste des produits</a>
               </ng-container>
-              <a class="dropdown-item" (click)="logout()" >Se déconnecter</a>
+              <a class="dropdown-item" (click)="logout()" > Se déconnecter</a>
             </div>
           </li>
         </ul>

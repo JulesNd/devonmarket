@@ -6,7 +6,7 @@ import { ShoppingCart } from './../models/shopping-cart';
   templateUrl: './shopping-cart-summary.component.html',
   styleUrls: ['./shopping-cart-summary.component.css']
 })
-export class ShoppingCartSummaryComponent{
+export class ShoppingCartSummaryComponent {
  @Input('cart') cart: ShoppingCart;
   constructor() { }
 

@@ -30,11 +30,11 @@
 }
 
 .nav-link{
-	color: #ff9f40 !important;
+	color: slateblue !important;
 }
 
 .nav-login{
-	background: #ff9f40;
+	background: slateblue;
 	padding: 10px 30px;
 	color: white !important;
 	box-shadow: 0 3px 6px rgba(0, 60, 157, 0.45);
@@ -42,13 +42,13 @@
 	border-radius: 5px;
 	text-decoration: none;
 	transition: all 0.2s ease;
-	border: 1px solid #ff9f40;
+	border: 1px solid slateblue;
 	cursor: pointer;
 }
 
 .nav-login:hover{
 	background-color: white;
-	color: #ff9f40 !important;
+	color: slateblue !important;
 }
 
 .dropdown-menu{
@@ -59,8 +59,10 @@
 	cursor:pointer;
 	padding: 0.5em 0;
 	text-align:center;
+
 }
 
 .dropdown-item:hover, .dropdown-item:focus{
-	background-color: #ff9f40;
+	background-color:slateblue;
+  color: white;
 }

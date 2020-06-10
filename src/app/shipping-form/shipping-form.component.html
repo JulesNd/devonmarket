@@ -1,7 +1,8 @@
 <form #f="ngForm">
 		  <div class="form-group">
 		    <label for="">Nom</label>
-		    <input #name="ngModel" name="name" [(ngModel)]="shipping.name" type="text" class="form-control" required>
+		    <input #name="ngModel"     name="name" [(ngModel)]="shipping.name" type="text" class="form-control" required>
+
 		    <div class="alert alert-danger" *ngIf="name.touched && name.invalid">
 		      <div *ngIf="name.errors.required">Un nom est requis</div>
 		    </div>
