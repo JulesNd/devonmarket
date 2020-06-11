@@ -37,6 +37,11 @@
   left: 39%;
 }
 
+.abc{
+  background-color: white!important;
+
+}
+
 section {
   overflow:hidden;
   border-block: 1px solid gray;
@@ -107,7 +112,8 @@ h1 {
 }
 
 .comment:hover{
-  background-color: darkslateblue;
+
+  cursor: auto;
 }
 
 p {
@@ -130,7 +136,24 @@ button {
   cursor: pointer;
 }
 
+/* set to !important to override Materialize stylesheet */
 
+.carousel {
+  height: 700px !important;
+}
+
+/* set to flexbox to center the images with the indicator icons */
+.carousel-item {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+
+.carousel-item img {
+  width: 500px !important;
+  height: auto !important;
+}
 
 header {
   height: 100vh;

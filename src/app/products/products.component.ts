@@ -34,6 +34,7 @@ export class ProductsComponent implements OnInit {
 
   // tslint:disable-next-line:indent
   	async ngOnInit() {
+
       this.auth.appUser$.subscribe(appUser => this.appUser = appUser);
 
       // tslint:disable-next-line:indent
