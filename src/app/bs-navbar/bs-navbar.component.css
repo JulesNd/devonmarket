@@ -64,7 +64,7 @@
 
 .dropdown-item:hover, .dropdown-item:focus{
 	background-color:slateblue;
-  color: white;
+  color: white !important;
 }
 
 .logo{
