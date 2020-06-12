@@ -7,6 +7,10 @@
 	background-position: center;
 }
 
+.col-10{
+	max-width:100%;
+}
+
 .menu-high{
 	display: flex;
 	justify-content: space-around;
@@ -33,4 +37,18 @@ p{
 	border: 2px solid #dee2e6;
 	text-align:center;
 	vertical-align: middle;
+	padding:7px;
+}
+
+@media screen and (max-width: 750px) {
+	.itemPicture{
+		display: none;
+	}
+	td {
+		width:30%;
+	}
+	.col-2{
+		flex:0;
+		max-width:100%
+	}
 }

@@ -1,9 +1,9 @@
-<div class="row">
+<div class="rowParent">
 	<div class="col-3">
 		<product-filter *ngIf="appUser "  [category]="category"></product-filter>
 	</div>
 	<div class="col-9">
-		<div class="row" *ngIf="cart$ | async as cart">
+		<div class="rowChild" *ngIf="cart$ | async as cart">
 			<ng-container *ngFor="let p of filteredProducts; let i = index">
 				<div class="col">
 					<product-card [product]="p" [shopping-cart]="cart"></product-card>
@@ -43,7 +43,7 @@
 
 		<h5>Avec <span class="bluespan">DevonMarket</span>, vos fruits et légumes <span class="bluespan">Bio</span> cueillis le matin et livrés le lendemain !</h5>
 
-    <p style="font-size:30px; text-align:center;">En matière de goût, le chemin le plus court est toujours le meilleur…
+    <p id="DMText">En matière de goût, le chemin le plus court est toujours le meilleur…
       C’est pourquoi chez <span class="bluespan">DevonMarket</span>, la proximité nous tient à coeur ! Proximité des fruits, légumes et produits frais que nous sélectionnons pour vous mais aussi proximité entre vous, consommateurs gourmands & exigeants, et <span class="bluespan">nos producteurs locaux</span> avec qui nous partageons les mêmes valeurs : transparence, qualité gustative et modes de production raisonnés et respectueux de l’environnement.
       Notre pari ? Vous faire (re)commander <span class="bluespan">DevonMarket</span> les yeux fermés ! </p>
 

@@ -79,12 +79,16 @@ from,11%,to {margin-left:-100px;}
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 650px;
+  height: auto;
 }
 
 h5{
   font-size: 40px;
   text-align:center;
+}
+
+#DMText{
+  font-size:30px; text-align:center;
 }
 
 .bluespan{
@@ -169,4 +173,56 @@ header {
   justify-content: center;
   align-items: center;
   background: #eee;
+}
+
+.rowParent, .rowChild{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .slogan{
+    left:34%;
+  }
+  .gallerie{
+    height:750px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+	.rowParent{
+		margin-top: 80px;
+	}
+  .slogan{
+    left:21%;
+  }
+  .gallerie{
+    height:600px;
+  }
+  h5{
+    font-size:30px;
+  }
+  #DMText{
+    font-size:20px;
+  }
+  .comment{
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallerie{
+    height:450px;
+  }
+  .slogan{
+    left:0%;
+  }
+  section{
+    margin-top:unset;
+  }
+  #articleDM img {
+    width: 150px !important;
+    height: 150px !important;
+  }
 }

@@ -1,5 +1,14 @@
 .btn-secondary{
 	background-color: slateblue;
 	border-color: slateblue;
+}
 
+@media screen and (max-width: 750px) {
+	.col-2{
+		flex:0;
+		max-width:100%
+	}
+	.no-gutters{
+		justify-content: center;
+	}
 }

@@ -6,3 +6,9 @@
 	background-color: slateblue;
 	border-color: slateblue;
 }
+
+@media screen and (max-width: 750px) {
+	.list-group-item.list-group-item-action {
+    padding: 10px;
+	}
+}
