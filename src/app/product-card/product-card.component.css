@@ -5,11 +5,12 @@
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 400px;
+	height: 370px;
+  margin: 2%;
 }
 
 .card:hover{
-	transform: scale(1.05);
+	transform: scale(1.02);
 }
 
 .card-footer {
@@ -21,8 +22,8 @@
 }
 
 .btn-secondary{
-	background-color: #ff9f40;
-	border-color: black;
+	background-color: slateblue;
+	border-color: slateblue;
 }
 
 .row .col{

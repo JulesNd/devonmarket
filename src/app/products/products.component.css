@@ -31,10 +31,15 @@
   font-size: 22px;
   font-family: Calibri;
   font-style: italic;
-  color: #ff9f40;
+  color: slateblue;
   position: absolute;
   top: 60%;
   left: 39%;
+}
+
+.abc{
+  background-color: white!important;
+
 }
 
 section {
@@ -78,4 +83,84 @@ from,11%,to {margin-left:-100px;}
 65%,76%{margin-left:-1300px;}
 80%,91%{margin-left:-1600px;}
 99.99%{margin-left:-1900px;}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+h1, p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: inherit;
+  line-height: 1.5;
+  color: slateblue;
+}
+
+.comment{
+  background-color: slateblue;
+  color: white
+}
+
+.comment:hover{
+
+  cursor: auto;
+}
+
+p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #282828;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  letter-spacing: 0.03rem;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  color: #282828;
+  cursor: pointer;
+}
+
+/* set to !important to override Materialize stylesheet */
+
+.carousel {
+  height: 700px !important;
+}
+
+/* set to flexbox to center the images with the indicator icons */
+.carousel-item {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+
+.carousel-item img {
+  width: 500px !important;
+  height: auto !important;
+}
+
+header {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
 }

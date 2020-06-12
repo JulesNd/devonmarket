@@ -1,10 +1,10 @@
 <p>
-	<a routerLink="/admin/products/new"class="btn btn-primary">New Products</a>
+	<a routerLink="/admin/products/new"class="btn btn-primary">Ajouter un produit</a>
 </p>
 <p>
 	<input #query
 	 (keyup)="filter(query.value)"
-	 type="text" class="form-control" placeholder="Search...">
+	 type="text" class="form-control" placeholder="Rechercher un produit">
 </p>
 <data-table
 	[items]="items"
@@ -13,14 +13,14 @@
 >
 	<data-table-column
 		[property]="'title'"
-		[header]="'Title'"
+		[header]="'Titre'"
 		[sortable]="true"
 		[resizable]="true"
 	>
 	</data-table-column>
 	<data-table-column
 		[property]="'price'"
-		[header]="'Price'"
+		[header]="'Prix'"
 		[sortable]="true"
 		[resizable]="true"
 	>
@@ -30,7 +30,7 @@
 	</data-table-column>
 	<data-table-column
 		[property]="'$key'"
-		[header]="'Title'"
+		[header]="''"
 	>
 		<ng-template #dataTableCell let-item="item">
 	    	<a [routerLink]="['/admin/products/',item.$key]">Edit</a>
